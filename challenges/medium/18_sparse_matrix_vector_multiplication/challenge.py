@@ -179,4 +179,3 @@ class Challenge(ChallengeBase):
             "N": N,
             "nnz": nnz
         } 
-   

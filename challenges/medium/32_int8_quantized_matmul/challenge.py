@@ -44,9 +44,6 @@ class Challenge(ChallengeBase):
         import os
         dtype = torch.int8
         device = "cuda"
-        path = os.path.join(os.path.dirname(__file__), "example_test.json")
-        with open(path, "r") as f:
-            data = json.load(f)[0]["parameters"]
         A = torch.tensor([[1, 2], [3, 4]], dtype=dtype, device=device).flatten()
         B = torch.tensor([[5, 6], [7, 8]], dtype=dtype, device=device).flatten()
         C = torch.tensor([[0, 0], [0, 0]], dtype=dtype, device=device).flatten()
